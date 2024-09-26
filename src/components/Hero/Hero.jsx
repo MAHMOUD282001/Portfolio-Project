@@ -11,8 +11,8 @@ function Hero() {
       <Box
         sx={{
           position: "absolute",
-          top: { md: "50%", xs: "55%" },
-          transform: "translateY(-50%)",
+          top: { md: "50%", xs: "30%" },
+          transform: { md: "translateY(-50%)", xs: "" },
           left: "0",
           width: "100%",
         }}
@@ -65,9 +65,9 @@ function Hero() {
                 data-aos="fade-up"
                 data-aos-delay="700"
                 sx={{
-                  width: { xs: "250px", md: "400px" },
-                  height: { xs: "250px", md: "400px" },
-                  mt: { xs: "20px", md: "0" },
+                  width: { xs: "220px", md: "400px" },
+                  height: { xs: "220px", md: "400px" },
+                  mt: { xs: "30px", md: "0" },
                   background: theme.palette.tertiary.main,
                   borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
                   display: "flex",

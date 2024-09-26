@@ -10,6 +10,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import EarthCanvas from "../canvas/Earth";
+import contactImg from "../../assets/contact.svg";
+
 
 function Contact() {
   let theme = useTheme();
@@ -172,7 +174,12 @@ function Contact() {
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-left">
             <Box sx={{ height: { md: "500px", xs: "350px" } }}>
-              <EarthCanvas />
+              <img
+                src={contactImg}
+                alt="Contact"
+                style={{ objectFit: "contain" }}
+                className="about-img"
+              />
             </Box>
           </Grid>
         </Grid>

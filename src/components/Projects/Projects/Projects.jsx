@@ -53,7 +53,17 @@ function Projects() {
               >
                 React Js & MUI
               </button>
-
+              
+              <button
+                onClick={() => updateProjects("reactTailwind")}
+                className={`common-btn ${
+                  active === "reactTailwind" ? "active" : ""
+                }`}
+                style={{ width: "100%", marginBottom: "20px" }}
+              >
+                React Js & Tailwind
+              </button>
+              
               <button
                 onClick={() => updateProjects("reactBootstrap")}
                 className={`common-btn ${

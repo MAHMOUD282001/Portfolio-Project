@@ -22,6 +22,7 @@ function Navbar({ setMode }) {
         zIndex: 20,
         width: "100%",
         backgroundColor: scrolled ? "#050816" : "transparent",
+        boxShadow: scrolled ? "rgba(0, 0, 0, 0.24) 0px 3px 8px" : "",
       }}
       className="navbar"
     >
@@ -134,7 +135,7 @@ function Navbar({ setMode }) {
               right: { xs: toggle ? "0" : "-250px", sm: "-250px" },
               transition: "all .5s",
               top: 0,
-              background: "#050816",
+              background: "#8754AF",
               width: "250px",
               height: "100vh",
               flexDirection: "column",
